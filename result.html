@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>Your Health Analysis</h1>
+
+    <div class="summary-box">
+        <h2>AI Summary</h2>
+        <div class="clean-summary">
+            {{ summary|safe }}
+        </div>
+    </div>
+
+    <div class="scores-container">
+        <h2>Your Health Scores</h2>
+
+        <div class="score-item">
+            <label>PCOS Risk</label>
+            <div class="bar"><div class="fill" style="width: {{ pcos_score }}%;"></div></div>
+            <span>{{ pcos_score }}%</span>
+        </div>
+
+        <div class="score-item">
+            <label>Anemia Risk</label>
+            <div class="bar"><div class="fill" style="width: {{ anemia_score }}%;"></div></div>
+            <span>{{ anemia_score }}%</span>
+        </div>
+
+        <div class="score-item">
+            <label>Lifestyle Score</label>
+            <div class="bar"><div class="fill" style="width: {{ lifestyle_score }}%;"></div></div>
+            <span>{{ lifestyle_score }}%</span>
+        </div>
+
+        <div class="score-item">
+            <label>Hydration</label>
+            <div class="bar"><div class="fill" style="width: {{ hydration_score }}%;"></div></div>
+            <span>{{ hydration_score }}%</span>
+        </div>
+
+        <div class="score-item">
+            <label>Sleep Score</label>
+            <div class="bar"><div class="fill" style="width: {{ sleep_score }}%;"></div></div>
+            <span>{{ sleep_score }}%</span>
+        </div>
+
+    </div>
+
+    <form action="/download_pdf" method="POST">
+        <input type="hidden" name="summary" value="{{ summary }}">
+        <button class="pdf-btn">Download PDF Report</button>
+    </form>
+
+    <h3>Reminder: These insights come from an AI-based analysis and are for informational purposes only. Everyone’s body is unique, so if something feels off or you’re dealing with serious symptoms, make sure to get checked by a healthcare expert</h3>
+</div>
+
+</body>
+</html>

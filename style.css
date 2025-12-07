@@ -1,0 +1,140 @@
+body {
+    background: #ffeef4;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+/* Woman icon */
+.silhouette {
+    width: 95px;
+    height: auto;
+    opacity: 0.9;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Main container */
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #f7c6d9;
+}
+
+/* Titles */
+.header {
+    text-align: center;
+}
+
+.subtitle {
+    color: #e85a8b;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Form layout - labels above inputs */
+.form-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px; /* spacing between each field */
+}
+
+.form-box label {
+    font-weight: 600;
+    color: #d6336c;
+    margin-bottom: 6px; /* space before input box */
+    display: block;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f3b8cc;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Symptoms - stacked checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #d6336c;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7aae;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* Result Page */
+.result-container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Bars */
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #ffe1ec;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.fill {
+    height: 100%;
+    background: #ff5a9b;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* Summary box */
+.summary-box {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+}
+
+.clean-summary h3 {
+    margin-bottom: 3px;
+    color: #d6336c;
+}
+
+.clean-summary b {
+    color: #d6336c;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .container,
+    .result-container {
+        width: 92%;
+    }
+
+    .silhouette {
+        width: 75px;
+    }
+}

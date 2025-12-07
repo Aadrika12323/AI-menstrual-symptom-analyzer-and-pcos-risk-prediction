@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menstrual Health Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/woman.jpg') }}" class="silhouette">
+        <h1>Menstrual Health Assistant</h1>
+        <p class="subtitle">Track symptoms • Get insights • Early warnings</p>
+    </div>
+
+    <form action="/analyze" method="POST" class="form-box">
+
+        <label>Cycle Length (days)</label>
+        <input type="number" name="cycle_length" required>
+
+        <label>Period Duration (days)</label>
+        <input type="number" name="period_duration" required>
+
+        <label>Flow Level</label>
+        <select name="flow_level">
+            <option value="1">Light</option>
+            <option value="2">Moderate</option>
+            <option value="3">Heavy</option>
+        </select>
+
+        <label>Energy Level (1–5)</label>
+        <input type="number" name="energy" min="1" max="5" required>
+
+        <label>Sleep (hrs)</label>
+        <input type="number" name="sleep" required>
+
+        <label>Water Intake (glasses)</label>
+        <input type="number" name="water" required>
+
+        <label>Activity Level</label>
+        <select name="activity">
+            <option value="Moderate">Moderate</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="Active">Active</option>
+        </select>
+
+        <label>Symptoms</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="symptoms" value="cramps"> Cramps</label>
+            <label><input type="checkbox" name="symptoms" value="fatigue"> Fatigue</label>
+            <label><input type="checkbox" name="symptoms" value="mood_swings"> Mood Swings</label>
+            <label><input type="checkbox" name="symptoms" value="acne"> Acne</label>
+            <label><input type="checkbox" name="symptoms" value="hair_fall"> Hair Fall</label>
+            <label><input type="checkbox" name="symptoms" value="heavy_bleeding"> Heavy Bleeding</label>
+            <label><input type="checkbox" name="symptoms" value="irregular_periods"> Irregular Periods</label>
+        </div>
+
+        <button>Analyze</button>
+    </form>
+
+</div>
+
+</body>
+</html>

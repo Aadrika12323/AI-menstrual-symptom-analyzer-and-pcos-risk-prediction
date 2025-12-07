@@ -1,0 +1,7 @@
+flask 
+numpy 
+python-dotenv 
+matplotlib 
+fpdf 
+requests
+ groq
