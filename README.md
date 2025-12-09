@@ -1,8 +1,9 @@
 # AI-menstrual-symptom-analyzer-and-pcos-risk-prediction
-<img width="1861" height="817" alt="Screenshot 2025-12-07 170553" src="https://github.com/user-attachments/assets/7ecf7db7-71e5-4faf-8bc7-89238c3aeaa0" />
-<img width="1906" height="903" alt="Screenshot 2025-12-07 170633" src="https://github.com/user-attachments/assets/36dedf6b-8e1b-4c08-a722-48d5d7e60dd8" />
-<img width="1881" height="899" alt="Screenshot 2025-12-07 170715" src="https://github.com/user-attachments/assets/6f1c16e2-a7ea-4344-822d-f376601612c9" />
-<img width="1865" height="894" alt="Screenshot 2025-12-07 170739" src="https://github.com/user-attachments/assets/bae214a9-0dda-4c58-b462-481836fef6d8" />
+<img width="1876" height="914" alt="Screenshot 2025-12-09 171618" src="https://github.com/user-attachments/assets/824ad50c-0ab0-4ec2-b193-cc0ee201816b" />
+<img width="1882" height="907" alt="Screenshot 2025-12-09 171557" src="https://github.com/user-attachments/assets/99185706-27d5-4146-b576-d11556d57bc4" />
+<img width="1900" height="898" alt="Screenshot 2025-12-09 171448" src="https://github.com/user-attachments/assets/4723cbd0-3960-4c43-b5a6-c9b2f00b609f" />
+<img width="1879" height="727" alt="Screenshot 2025-12-09 171532" src="https://github.com/user-attachments/assets/53abe422-8221-4a47-806b-92e0761c6ea3" />
+<img width="1866" height="894" alt="Screenshot 2025-12-09 171406" src="https://github.com/user-attachments/assets/6c150bfb-0e9c-4943-b746-d03ca4ecb528" />
 
 An ai menstrual assistant  using python, flask, and api integration
 # AI Menstrual Symptom Analyzer
